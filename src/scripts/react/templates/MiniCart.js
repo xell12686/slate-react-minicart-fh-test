@@ -1,6 +1,7 @@
 import React from 'react';
 import CartLineItem from '../components/CartLineItem';
-import CloseIcon from '../images/close.png';
+import { IoIosClose } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 
 import './MiniCart.scss';
 
@@ -14,7 +15,7 @@ const MiniCart = (props) => {
 						<div className="header">
 							<h3>Cart</h3>
 							<button onClick={ toggleCart } className="close-button">
-								<img src={CloseIcon} alt="close" />
+								<MdClose size="2em"/>
 							</button>
 						</div>
 						<div className="items">
